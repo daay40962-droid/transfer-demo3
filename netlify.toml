@@ -1,0 +1,14 @@
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/send-telegram"
+  to = "/.netlify/functions/send-telegram"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

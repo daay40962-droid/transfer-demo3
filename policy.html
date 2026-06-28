@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Правовые документы | ТрансферСевер</title>
+  <meta name="description" content="Политики конфиденциальности, обработки персональных данных и использования файлов cookie сайта ТрансферСевер.">
+  <meta name="robots" content="noindex"><!-- заглушка: до юр-проверки не индексируем -->
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Палитра и токены — синхронно с index.html (раздел стилей Этапа 0). */
+    :root {
+      --navy:      #003825;
+      --navy-2:    #16263B;
+      --gold:      #92DE35;
+      --gold-2:    #A4EA44;
+      --white:     #FFFFFF;
+      --ink:       #1C2733;
+      --muted:     #6B7886;
+      --bg-light:  #F4F6F8;
+      --line:      #E2E7EC;
+      --font-head: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --container: 1120px;
+      --gutter:    20px;
+      --radius:    10px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--bg-light);
+      line-height: 1.6;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+
+    /* Шапка страницы */
+    .page-header { background: var(--navy); padding-block: 16px; }
+    .page-header .container { display: flex; align-items: center; gap: 16px; }
+    .page-header__logo { height: 40px; width: auto; }
+    .page-header__back {
+      margin-left: auto;
+      color: rgba(255,255,255,.85);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+    }
+    .page-header__back:hover { color: var(--gold); text-decoration: none; }
+
+    /* Тело документа */
+    main { padding-block: clamp(32px, 6vw, 56px) 64px; }
+    h1 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+    .lead { color: var(--muted); margin: 0 0 28px; }
+
+    /* Предупреждение «заглушка» */
+    .notice {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #FBF3E0;
+      border: 1px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin: 0 0 32px;
+      font-size: .95rem;
+      color: #6B5418;
+    }
+    .notice svg { flex-shrink: 0; width: 22px; height: 22px; stroke: var(--gold); }
+
+    /* Оглавление */
+    .toc { list-style: none; margin: 0 0 36px; padding: 0; display: grid; gap: 8px; }
+    .toc a { font-family: var(--font-head); font-weight: 600; }
+
+    /* Раздел политики */
+    .policy {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: clamp(20px, 4vw, 32px);
+      margin-bottom: 24px;
+      scroll-margin-top: 16px;
+    }
+    .policy h2 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin: 0 0 14px;
+    }
+    .policy p { margin: 0 0 12px; color: var(--ink); }
+    .policy__stub { color: var(--muted); font-style: italic; }
+
+    /* Подвал */
+    .page-footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.6);
+      padding-block: 24px;
+      font-size: .85rem;
+    }
+    .page-footer a { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <a href="index.html" aria-label="ТрансферСевер — на главную">
+        <img class="page-header__logo" src="assets/logo.png" alt="ТрансферСевер">
+      </a>
+      <a class="page-header__back" href="index.html">← На главную</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Правовые документы</h1>
+    <p class="lead">ИП Ежкова Екатерина Михайловна · ИНН 243401091643</p>
+
+    <!-- Демо: реальные тексты политик предоставит заказчик/юрист перед запуском -->
+    <div class="notice">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      <span>Тексты на этой странице — заглушки демо-версии и <strong>требуют юридической проверки</strong>.
+      Финальные редакции политик предоставит заказчик перед боевым запуском.</span>
+    </div>
+
+    <ul class="toc">
+      <li><a href="#confidential">1. Политика конфиденциальности</a></li>
+      <li><a href="#pdn">2. Политика обработки персональных данных</a></li>
+      <li><a href="#cookie">3. Политика в отношении файлов cookie</a></li>
+    </ul>
+
+    <section class="policy" id="confidential">
+      <h2>Политика конфиденциальности</h2>
+      <p>Настоящая политика описывает, как ИП Ежкова Екатерина Михайловна обрабатывает и защищает
+      информацию, которую посетитель оставляет на сайте при бронировании поездки или заказе обратного звонка.</p>
+      <p>Заявки, отправленные через онлайн-форму, могут передаваться диспетчеру через Telegram-бота для обработки
+      обращения и связи с пассажиром.</p>
+      <p class="policy__stub">Полный текст раздела будет добавлен после юридической проверки.</p>
+    </section>
+
+    <section class="policy" id="pdn">
+      <h2>Политика обработки персональных данных</h2>
+      <p>Здесь будут описаны цели и правовые основания обработки персональных данных (имя, телефон),
+      сроки хранения и права субъекта данных в соответствии с Федеральным законом № 152-ФЗ «О персональных данных».</p>
+      <p>В боевой версии данные онлайн-заявки могут включать имя, телефон, дату поездки, маршрут, желаемое время
+      и комментарий; эти сведения передаются диспетчеру через защищённую серверную интеграцию с Telegram.</p>
+      <p class="policy__stub">Полный текст раздела будет добавлен после юридической проверки.</p>
+    </section>
+
+    <section class="policy" id="cookie">
+      <h2>Политика в отношении файлов cookie</h2>
+      <p>Сайт использует файлы cookie для корректной работы и анализа посещаемости. Здесь будет описано,
+      какие cookie используются, с какой целью и как отказаться от них в настройках браузера.</p>
+      <p class="policy__stub">Полный текст раздела будет добавлен после юридической проверки.</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      © <span id="year">2026</span> ТрансферСевер · <a href="index.html">Вернуться на сайт</a>
+    </div>
+  </footer>
+
+  <script>
+    // Год в копирайте — чтобы не править руками каждый январь.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
